@@ -1,0 +1,51 @@
+# C++ specific
+*.o
+*.d
+*.gcno
+*.gcda
+*.gcov
+*.lo
+*.la
+*.so
+*.a
+*.dynlib
+*.dll
+*.exe
+*.obj
+*.lib
+*.exp
+*.pdb
+*.ilk
+# Executables
+/bin/
+# Object files
+/obj/
+# Build directories
+build/
+cmake-build-*/
+# IDE specific files
+.vscode/
+.idea/
+*.suo
+*.user
+*.ncb
+*.aps
+*.vspscc
+*.vssscc
+*.bak
+*.ipch
+*.log
+*.tlog
+*.lastbuildstate
+*.VC.opendb
+*.VC.db
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+# Other
+*.DS_Store
+*.swp
+*~
