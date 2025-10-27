@@ -13,7 +13,7 @@ public:
      * @brief Default constructor for BatteryCell.
      * Initializes the cell with default/dummy values.
      */
-    BatteryCell(); // <-- This is the missing declaration!
+    BatteryCell();
 
     /**
      * @brief Constructor for BatteryCell.

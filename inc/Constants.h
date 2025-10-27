@@ -5,7 +5,7 @@
 #include <cstdint> // For uint8_t, float
 
 // Define the number of cells in the battery pack
-const uint8_t NUM_CELLS = 4;
+const uint8_t NUM_CELLS = 3;
 
 // --- Battery Pack Characteristics ---
 // Nominal capacity of the battery pack in milliampere-hours (mAh)

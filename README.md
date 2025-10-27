@@ -10,12 +10,8 @@ Safety Focus: Implements a safety manager that evaluates battery parameters agai
 
 Simulated Environment: Includes a simulated sensor layer for initial development and testing without requiring physical hardware.
 
-Good Software Engineering Practices: Follows a clear folder structure, includes a readable README, proper .gitignore, and a portable Makefile.
-
-Showcase: Intended as a showcase for embedded software development and functional safety skills.
-
 Features
-4-Cell Lithium Battery Simulation: Simulates voltage and temperature readings for a 4-cell lithium battery pack.
+4-Cell Lithium Battery Simulation: Simulates voltage and temperature readings for a 4-cell lithium.
 
 Pack Current Monitoring: Simulates and monitors the total current flowing through the battery pack (charge/discharge).
 
@@ -77,31 +73,29 @@ After a successful build, you can run the executable:
 The application will print simulated sensor readings, BMS state transitions, SoC, SoH, and charging status to your console every second. You will occasionally see "Fault Injected!" messages, demonstrating the state transition logic.
 
 Future Enhancements (Roadmap)
-This prototype provides a robust foundation. Future steps could include:
+    This prototype provides a robust foundation. Future steps could include:
 
-Real Hardware Drivers: Replace SensorSimulator with actual ADC and temperature/current sensor drivers for a specific microcontroller (e.g., STM32, ESP32).
+    Real Hardware Drivers: Replace SensorSimulator with actual ADC and temperature/current sensor drivers for a specific microcontroller (e.g., STM32, ESP32).
 
-Advanced SoC/SoH Algorithms: Implement more sophisticated algorithms (e.g., Kalman filters for SoC, impedance tracking for SoH).
+    Advanced SoC/SoH Algorithms: Implement more sophisticated algorithms (e.g., Kalman filters for SoC, impedance tracking for SoH).
 
-Active/Passive Balancing: Implement cell balancing strategies.
+    Active/Passive Balancing: Implement cell balancing strategies.
 
-Robust Fault Handling and Recovery: Detailed fault codes, non-volatile logging, and specific recovery procedures.
+    Robust Fault Handling and Recovery: Detailed fault codes, non-volatile logging, and specific recovery procedures.
 
-Communication Interfaces: Add support for CAN, UART, I2C, or SPI for external communication with other vehicle systems or a diagnostic tool.
+    Communication Interfaces: Add support for CAN, UART, I2C, or SPI for external communication with other vehicle systems or a diagnostic tool.
 
-Power Management Control: Integrate logic for controlling charging/discharging relays or contactors.
+    Power Management Control: Integrate logic for controlling charging/discharging relays or contactors.
 
-Formal State Machine Implementation: Use a dedicated state machine library or design pattern for more complex and verifiable state transitions.
+    Unit and Integration Testing: Develop comprehensive unit tests for individual modules and integration tests for the system using frameworks like Google Test or Vector CAST.
 
-Unit and Integration Testing: Develop comprehensive unit tests for individual modules and integration tests for the system using frameworks like Google Test.
+    CMake Build System: Transition from Makefile to CMake for more complex, cross-platform builds and easier integration with IDEs.
 
-CMake Build System: Transition from Makefile to CMake for more complex, cross-platform builds and easier integration with IDEs.
+    Functional Safety Patterns: Incorporate specific functional safety patterns (e.g., redundancy for critical sensors, self-tests, hardware diagnostics, Program Flow Monitor).
 
-Functional Safety Patterns: Incorporate specific functional safety patterns (e.g., redundancy for critical sensors, self-tests, diverse software, hardware diagnostics).
+    Memory Management: Optimize for embedded memory constraints.
 
-Memory Management: Optimize for embedded memory constraints.
-
-Real-time Operating System (RTOS) Integration: Adapt the main loop to run as a task within an RTOS for better task scheduling and real-time performance.
+    Real-time Operating System (RTOS) Integration: Adapt the main loop to run as a task within an RTOS for better task scheduling and real-time performance.
 
 ## Detailed Documentation
 
