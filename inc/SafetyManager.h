@@ -7,6 +7,8 @@
 #include "../inc/BatteryCell.h"   // For BatteryCell class
 #include "../inc/Constants.h"     // For NUM_CELLS and limits
 
+
+
 /**
  * @brief Manages the safety state of the BMS based on battery cell parameters and pack current.
  * This class evaluates cell voltages, temperatures, and pack current against defined limits
